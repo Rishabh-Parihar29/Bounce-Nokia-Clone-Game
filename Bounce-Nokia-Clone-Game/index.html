@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" type="image/ico" href="assets/tile/ball_small.png">
+
+        <title>Bounce Ball </title>
+        <style>
+
+            @font-face {
+                font-family: 'GameFont';
+                src: url('assets/fonts/YanoneKaffeesatz-Bold.ttf');
+            }
+            h1{
+                margin: 0%;
+                display: inline;
+                position: fixed;
+                left: 1100px;
+                font-family: 'GameFont';
+                font-size: 49px;
+                text-transform: uppercase;
+            }
+            #song{
+                   left: 1120px;
+                   position: relative;
+                   top: 50px;
+                   
+            }
+
+
+            #logo{
+                width: 500px;
+                position: fixed;
+                right: 69%;
+                bottom: 70%;
+            }
+
+            .foot{
+                background-color: #000000;
+                color: white;
+                text-align: center;
+                margin-top: 662px;
+                height: 69px;
+                font-weight: bolder;
+                font-family: 'GameFont';
+                font-size: 60px;
+                letter-spacing: 70px;
+                }
+
+            body {
+                background-color: #18e5ff38;
+                margin: 0%;
+                padding: 0%;
+
+            }
+
+            #gameArea {
+                position: absolute;
+                width: 640px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            canvas {
+                margin: 0;
+                padding: 0;
+                display: block;
+                font-family: 'GameFont';
+            }
+
+            .game-finished {
+                width: 480px;
+                height: 270px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .level-menu {
+                width: 640px;
+                height: 360px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .gbar {
+                width: 630px;
+                height: 40px;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>For Better Experience</h1>
+        <audio controls  id="song" loop >
+            <source src="bounce Ball Song .mp3">
+        </audio>
+        <img src="Logo.png" id="logo">
+        <div id="gameArea"></div>
+        <footer class="foot">
+           MADE WITH &hearts;
+        </footer>
+        <script src="js/tile.js"></script>
+        <script src="js/sprite.js"></script>
+        <script src="js/input.js"></script>
+        <script src="js/entity.js"></script>
+        <script src="js/enemy.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/canvas.js"></script>
+        <script src="js/map.js"></script>
+        <script src="js/level.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
